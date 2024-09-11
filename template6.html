@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo Completo de HTML</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Exemplo Completo de HTML</h1>
+
+    <!-- Listas Não Ordenadas -->
+    <h2>Listas Não Ordenadas</h2>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <!-- Listas Ordenadas -->
+    <h2>Listas Ordenadas</h2>
+    <ol>
+        <li>Primeiro item</li>
+        <li>Segundo item</li>
+        <li>Terceiro item</li>
+    </ol>
+
+    <!-- Listas de Definições -->
+    <h2>Listas de Definições</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>HyperText Markup Language</dd>
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheets</dd>
+    </dl>
+
+    <!-- Tabelas -->
+    <h2>Tabelas</h2>
+    <table>
+        <tr>
+            <th>Cabeçalho 1</th>
+            <th>Cabeçalho 2</th>
+        </tr>
+        <tr>
+            <td>Dado 1</td>
+            <td>Dado 2</td>
+        </tr>
+        <tr>
+            <td colspan="2">Célula Mesclada</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Célula Mesclada Verticalmente</td>
+            <td>Dado 3</td>
+        </tr>
+        <tr>
+            <td>Dado 4</td>
+        </tr>
+    </table>
+
+    <!-- Formulários -->
+    <h2>Formulários</h2>
+    <form>
+        <h3>Campos e Texto</h3>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome">
+
+        <label for="comentario">Comentário:</label>
+        <textarea id="comentario" name="comentario"></textarea>
+
+        <h3>Campos de Marcação</h3>
+        <label>
+            <input type="checkbox" name="interesse" value="html"> HTML
+        </label>
+        <label>
+            <input type="checkbox" name="interesse" value="css"> CSS
+        </label>
+        <label>
+            <input type="radio" name="sexo" value="masculino"> Masculino
+        </label>
+        <label>
+            <input type="radio" name="sexo" value="feminino"> Feminino
+        </label>
+
+        <h3>Campos Especiais</h3>
+        <label for="pais">País:</label>
+        <select id="pais" name="pais">
+            <option value="brasil">Brasil</option>
+            <option value="eua">EUA</option>
+        </select>
+
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha">
+
+        <button type="submit">Enviar</button>
+    </form>
+
+</body>
+</html>

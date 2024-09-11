@@ -1,0 +1,55 @@
+/* Folhas de estilo da página de contatos → contacts.html */
+
+main label {
+    display: block;
+    padding: 0 0 .5rem .25rem;
+}
+
+main input,
+main textarea,
+main button {
+    padding: .5rem;
+    border-radius: .3rem;
+}
+
+main input,
+main textarea {
+   width: 100%;
+   border: 1px solid rgb(252, 252, 252);
+   border-bottom: 2px solid rgb(0, 255, 255);
+   border-right: 2px solid rgb(0, 247, 255); 
+   background-color: rgb(255, 240, 240);
+}
+
+main textarea {
+    height: 6rem;
+    resize: vertical;
+}
+
+main button {
+    border: none;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    pointer-events: none;
+}
+
+
+main input:valid,
+main textarea:valid {
+    border: 1px solid rgb(0, 255, 0);
+    border-bottom: 2px solid rgb(0, 255, 0);
+    border-right: 2px solid rgb(0, 255, 0); 
+    background-color: rgb(255, 240, 240);
+}
+
+main form:valid button {
+    background-color: rgb(0, 140, 255);
+    pointer-events: all;
+    cursor: pointer;
+}
+
+main form small {
+    color: rgb(255, 0, 0);
+}
