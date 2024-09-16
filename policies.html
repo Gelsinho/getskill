@@ -1,113 +1,65 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
-        th {
-            background-color: #f2f2f2;
-        }
-        tr:nth-child(even) {
-            background-color: #f9f9f9;
-        }
-        form {
-            max-width: 600px;
-            margin: 20px 0;
-        }
-        label {
-            display: block;
-            margin: 10px 0 5px;
-        }
-        input, button {
-            width: 100%;
-            padding: 10px;
-            margin: 5px 0;
-        }
-        button {
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #45a049;
-        }
-    </style>
+    <title>Política de Privacidade - Zumbis World</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Cadastro</h1>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="privacidade.html">Política de Privacidade</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <form id="cadastroForm">
-        <label for="nome">Nome Completo:</label>
-        <input type="text" id="nome" name="nome" required>
+    <main>
+        <section id="privacy-policy">
+            <h1>Política de Privacidade</h1>
 
-        <label for="dataNascimento">Data de Nascimento:</label>
-        <input type="date" id="dataNascimento" name="dataNascimento" required>
+            <p>Bem-vindo ao Zumbis World! Esta política de privacidade explica como coletamos, usamos e protegemos suas informações pessoais quando você visita nosso site.</p>
 
-        <label for="email">E-mail:</label>
-        <input type="email" id="email" name="email" required>
+            <h2>1. Informações que Coletamos</h2>
+            <p>Coletamos informações pessoais identificáveis que você fornece voluntariamente, como nome, e-mail e outros detalhes ao se inscrever em nossa newsletter ou preencher formulários de contato.</p>
+            <p>Também coletamos informações não identificáveis, como dados de navegação e uso do site, que podem incluir seu endereço IP, tipo de navegador e páginas visitadas.</p>
 
-        <label for="telefone">Telefone:</label>
-        <input type="tel" id="telefone" name="telefone" required>
+            <h2>2. Como Usamos Suas Informações</h2>
+            <p>Usamos suas informações pessoais para:</p>
+            <ul>
+                <li>Responder a consultas e fornecer suporte ao cliente.</li>
+                <li>Enviar newsletters e atualizações sobre nosso conteúdo relacionado a zumbis.</li>
+                <li>Melhorar nosso site e entender como os visitantes o utilizam.</li>
+            </ul>
 
-        <button type="button" onclick="adicionarCadastro()">Adicionar</button>
-    </form>
+            <h2>3. Compartilhamento de Informações</h2>
+            <p>Não vendemos, trocamos ou transferimos suas informações pessoais para terceiros. Podemos compartilhar informações com parceiros de confiança que nos ajudam a operar nosso site, desde que esses parceiros concordem em manter essas informações confidenciais.</p>
 
-    <table id="tabelaCadastro">
-        <thead>
-            <tr>
-                <th>Nome Completo</th>
-                <th>Data de Nascimento</th>
-                <th>E-mail</th>
-                <th>Telefone</th>
-            </tr>
-        </thead>
-        <tbody>
-            <!-- Os dados cadastrados serão inseridos aqui -->
-        </tbody>
-    </table>
+            <h2>4. Segurança das Informações</h2>
+            <p>Implementamos medidas de segurança adequadas para proteger suas informações pessoais contra acesso não autorizado, alteração, divulgação ou destruição. No entanto, lembre-se de que nenhum método de transmissão pela Internet ou armazenamento eletrônico é 100% seguro.</p>
 
-    <script>
-        function adicionarCadastro() {
-            const nome = document.getElementById('nome').value;
-            const dataNascimento = document.getElementById('dataNascimento').value;
-            const email = document.getElementById('email').value;
-            const telefone = document.getElementById('telefone').value;
+            <h2>5. Seus Direitos</h2>
+            <p>Você tem o direito de acessar, corrigir ou excluir suas informações pessoais que temos. Se desejar fazer isso, entre em contato conosco através das informações fornecidas abaixo.</p>
 
-            if (nome && dataNascimento && email && telefone) {
-                const tabela = document.getElementById('tabelaCadastro').getElementsByTagName('tbody')[0];
-                const novaLinha = tabela.insertRow();
+            <h2>6. Cookies</h2>
+            <p>Utilizamos cookies para melhorar a sua experiência em nosso site. Cookies são pequenos arquivos de texto armazenados no seu dispositivo. Você pode optar por desativar os cookies nas configurações do seu navegador, mas isso pode afetar a funcionalidade do site.</p>
 
-                const celulaNome = novaLinha.insertCell(0);
-                const celulaDataNascimento = novaLinha.insertCell(1);
-                const celulaEmail = novaLinha.insertCell(2);
-                const celulaTelefone = novaLinha.insertCell(3);
+            <h2>7. Alterações a Esta Política</h2>
+            <p>Podemos atualizar nossa política de privacidade de tempos em tempos. Informaremos sobre quaisquer alterações publicando a nova política em nosso site. Recomendamos que você revise esta página periodicamente para se manter informado sobre como protegemos suas informações.</p>
 
-                celulaNome.textContent = nome;
-                celulaDataNascimento.textContent = dataNascimento;
-                celulaEmail.textContent = email;
-                celulaTelefone.textContent = telefone;
+            <h2>8. Contato</h2>
+            <p>Se você tiver alguma dúvida sobre nossa política de privacidade, entre em contato conosco:</p>
+            <address>
+                <p>Email: <a href="mailto:contato@zumbisworld.com">contato@zumbisworld.com</a></p>
+                <p>Endereço: Rua dos Zumbis, 123, Cidade dos Mortos, Brasil</p>
+            </address>
+        </section>
+    </main>
 
-                document.getElementById('cadastroForm').reset();
-            } else {
-                alert('Por favor, preencha todos os campos.');
-            }
-        }
-    </script>
+    <footer>
+        <p>&copy; 2024 Zumbis World. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
